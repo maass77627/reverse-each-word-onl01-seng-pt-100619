@@ -3,7 +3,7 @@ def reverse_each_word(sentence)
   sentence.split().each do |word|
     reversed_sentence += word.reverse + ''
   end
-  return reversed_sentence
+  return reversed_sentence.rstrip
   end 
   
   reverse_each_word("Hello there, and how are you?")
